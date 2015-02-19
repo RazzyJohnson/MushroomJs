@@ -1,0 +1,53 @@
+{
+"tables": 
+	{	
+		"categories": {
+			"name": {
+				"type": "text",
+				"length": 255,
+				"parameters": ["unique", "required"]
+			},
+			"description": {
+				"type": "text",
+				"length": 1024
+			}
+
+		},
+		"companies": {
+			"name": {
+				"type": "text",
+				"length": 255,
+				"parameters": ["required"]
+			},
+			"text": {
+				"type":"text"
+			}
+		},
+		"comments": {
+			"date": {
+				"type": "date",
+				"parameters": ["required"]
+			},
+			"text": {
+				"type": "text",
+				"parameters": ["required"]
+			}
+		},
+		"tags": {
+			"text": {
+				"type": "text",
+				"parameters": ["required"]
+			}
+		}
+	},
+	"relationships":{
+		"hasOne":{
+			"companies":"categories",
+			"comments":"companies"
+		},
+		"hasMany":{
+			"companies":"tags"
+		}
+	}
+
+}

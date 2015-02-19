@@ -1,0 +1,12 @@
+{
+	"database": {
+		"schemaLocation": "./schema.json",
+		"host": "localhost",
+		"port": 8889,
+		"name": "amsterdamportal",
+		"user": {
+			"username": "root",
+			"password": "root"
+		}
+	}
+}

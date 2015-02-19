@@ -1,0 +1,27 @@
+{
+  "name": "mushroom-js",
+  "version": "0.0.1",
+  "description": "Backend framework for node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mushroom",
+    "node.js",
+    "framwork",
+    "rest"
+  ],
+  "author": "Bastiaan Niamut",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "cors": "^2.5.2",
+    "express": "^4.10.5",
+    "hat": "0.0.3",
+    "mysql": "^2.5.3",
+    "squel": "^3.10.0",
+    "underscore": "^1.7.0"
+  }
+}
